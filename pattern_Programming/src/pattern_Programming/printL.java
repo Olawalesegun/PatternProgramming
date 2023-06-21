@@ -15,8 +15,21 @@ public class printL {
 			print.printFourthAlphabet(i, n);
 			System.out.print("  ");
 			print.printFifthAlphabet(i, n);
+			System.out.print("  ");
+			print.printSixthAlphabet(i, n);
+			System.out.println();
+		}
 		
-			System.out.println(" ");
+	}
+	private void printSixthAlphabet(int i, int n) {
+		for(int j = 0; j<n; j++) {
+			if(i==0||
+					i>0 && j==0 ||
+					i==(n-1)/2) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
 		}
 		
 	}
@@ -81,5 +94,5 @@ public class printL {
 			}
 		}
 	}
-	
+
 }
