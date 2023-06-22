@@ -23,9 +23,72 @@ public class printL {
 			print.printH(i, n);
 			System.out.print("  ");
 			print.printIAlphabet(i, n);
+			System.out.print("  ");
+			print.printJAlphabet(i, n);
+			System.out.print("  ");
+			print.printLAlphabet(i, n);
+			System.out.print(" ");
+			print.printOAlphabet(i, n);
+			System.out.print("  ");
+			print.printPAlphabet(i, n);
 			System.out.println();
 		}
 		
+	}
+	private void printPAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 && j<n-1||
+					i>0 && j==0||
+					i==(n-1)/2 && j<n-1 ||
+					i>0 && i<(n-1)/2 && j==n-1) System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printOAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 && !(j==n-1)||
+					i>0 && i<n-1 && j==0||
+					i==n-1 && j>0 && !(j==n-1)||
+					i>0 && i<n-1 && j==n-1)
+			{System.out.print("*");}
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printLAlphabet(int i2, int n2) {
+		for(int j=0; j<n; j++) {
+			if(i>=0 && j==0 ||
+					i==n-1)System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printJAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0||
+					i>0 && j==(n-1)/2||
+					i==n-1 && !(j>=(n-1)/2)) System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printIAlphabet(int i2, int n2) {
+		for(int j=0; j<n; j++) {
+			if(i==0 || i>=0 && j==(n-1)/2||
+					i==n-1)System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
 	}
 	private void printH(int i, int n) {
 		for(int j=0; j<n; j++) {
