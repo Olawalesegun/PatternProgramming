@@ -35,87 +35,7 @@ public class printL {
 		}
 		
 	}
-	private void printPAlphabet(int i, int n) {
-		for(int j=0; j<n; j++) {
-			if(i==0 && j>0 && j<n-1||
-					i>0 && j==0||
-					i==(n-1)/2 && j<n-1 ||
-					i>0 && i<(n-1)/2 && j==n-1) System.out.print("*");
-			else {
-				System.out.print(" ");
-			}
-		}
-		
-	}
-	private void printOAlphabet(int i, int n) {
-		for(int j=0; j<n; j++) {
-			if(i==0 && j>0 && !(j==n-1)||
-					i>0 && i<n-1 && j==0||
-					i==n-1 && j>0 && !(j==n-1)||
-					i>0 && i<n-1 && j==n-1)
-			{System.out.print("*");}
-			else {
-				System.out.print(" ");
-			}
-		}
-		
-	}
-	private void printLAlphabet(int i2, int n2) {
-		for(int j=0; j<n; j++) {
-			if(i>=0 && j==0 ||
-					i==n-1)System.out.print("*");
-			else {
-				System.out.print(" ");
-			}
-		}
-		
-	}
-	private void printJAlphabet(int i, int n) {
-		for(int j=0; j<n; j++) {
-			if(i==0||
-					i>0 && j==(n-1)/2||
-					i==n-1 && !(j>=(n-1)/2)) System.out.print("*");
-			else {
-				System.out.print(" ");
-			}
-		}
-		
-	}
-	private void printIAlphabet(int i2, int n2) {
-		for(int j=0; j<n; j++) {
-			if(i==0 || i>=0 && j==(n-1)/2||
-					i==n-1)System.out.print("*");
-			else {
-				System.out.print(" ");
-			}
-		}
-	}
-	private void printH(int i, int n) {
-		for(int j=0; j<n; j++) {
-			if(i>=0 && j==0 ||
-					i>=0 && j==n-1||
-					i==(n-1)/2
-					) {
-				System.out.print("*");
-			}else {
-				System.out.print(" ");
-			}
-		}
-	}
-	private void printGAlphabet(int i, int n) {
-		for(int j=0; j<n; j++) {
-			if(i==0 && j>0 ||
-					i>=1 && j==0 && !(j==n-2)||
-					i==n-1 && j>=1 && !(j==n-1)||
-					i==(n-1)/2 && j>(n-1)/2 && j<(n-1)||
-					i >=(n-1)/2 && j>=n-1) {
-				System.out.print("*");
-			}else {
-				System.out.print(" ");
-			}
-		}
-	}
-	
+
 	public void printFirstAlphabet(int i, int n) {
 		for(int j=0; j<n; j++) {
 			if(i==0 && j>=1 && j<n-1 ||
@@ -189,5 +109,91 @@ public class printL {
 		}
 		
 	}
+	private void printGAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 ||
+					i>=1 && j==0 && !(j==n-2)||
+					i==n-1 && j>=1 && !(j==n-1)||
+					i==(n-1)/2 && j>(n-1)/2 && j<(n-1)||
+					i >=(n-1)/2 && j>=n-1) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
+		}
+	}
+	private void printH(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i>=0 && j==0 ||
+					i>=0 && j==n-1||
+					i==(n-1)/2
+					) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
+		}
+	}
+	private void printIAlphabet(int i2, int n2) {
+		for(int j=0; j<n; j++) {
+			if(i==0 || i>=0 && j==(n-1)/2||
+					i==n-1)System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+	}
+	private void printJAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0||
+					i>0 && j==(n-1)/2||
+					i==n-1 && !(j>=(n-1)/2)) System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printLAlphabet(int i2, int n2) {
+		for(int j=0; j<n; j++) {
+			if(i>=0 && j==0 ||
+					i==n-1)System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+
+	private void printOAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 && !(j==n-1)||
+					i>0 && i<n-1 && j==0||
+					i==n-1 && j>0 && !(j==n-1)||
+					i>0 && i<n-1 && j==n-1)
+			{System.out.print("*");}
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	private void printPAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 && j<n-1||
+					i>0 && j==0||
+					i==(n-1)/2 && j<n-1 ||
+					i>0 && i<(n-1)/2 && j==n-1) System.out.print("*");
+			else {
+				System.out.print(" ");
+			}
+		}
+		
+	}
+	
+	
+	
+
+	
 
 }
