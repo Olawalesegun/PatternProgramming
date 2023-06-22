@@ -17,9 +17,38 @@ public class printL {
 			print.printFifthAlphabet(i, n);
 			System.out.print("  ");
 			print.printSixthAlphabet(i, n);
+			System.out.print("  ");
+			print.printGAlphabet(i, n);
+			System.out.print("  ");
+			print.printH(i, n);
 			System.out.println();
 		}
 		
+	}
+	private void printH(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i>=0 && j==0 ||
+					i>=0 && j==n-1||
+					i==(n-1)/2
+					) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
+		}
+	}
+	private void printGAlphabet(int i, int n) {
+		for(int j=0; j<n; j++) {
+			if(i==0 && j>0 ||
+					i>=1 && j==0 && !(j==n-2)||
+					i==n-1 && j>=1 && !(j==n-1)||
+					i==(n-1)/2 && j>(n-1)/2 && j<(n-1)||
+					i >=(n-1)/2 && j>=n-1) {
+				System.out.print("*");
+			}else {
+				System.out.print(" ");
+			}
+		}
 	}
 	private void printSixthAlphabet(int i, int n) {
 		for(int j = 0; j<n; j++) {
